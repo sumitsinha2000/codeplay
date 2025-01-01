@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 //import Siteloader from "./components/site_components/Siteloader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from './components/site_components/Layout';
-import Examples from './pages/Examples';
-import CountrysDB from './pages/CountryDB';
+import Layout from "./components/site_components/Layout";
+import Examples from "./pages/Examples";
+import CountrysDB from "./pages/CountryDB";
 import "./styles/style.css";
 function App({ value = 0 }) {
   // loader state
@@ -28,14 +28,18 @@ function App({ value = 0 }) {
   useEffect(() => {}, []);
   //return <Siteloader progress={percent} />;
   return isLoading ? <Siteloader progress={percent} /> : <Home />;*/
-  
+  useEffect(() => {
+    // Initialize any non-React Flowbite JS if needed
+    // Example: initialize dropdown or modal with Flowbite JS
+    window.Flowbite.init();
+  }, []);
   return (
     <Router>
       <Routes>
         {/* Wrap pages with the Layout component */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home/>} />
-          <Route path="Examples" element={<Examples/>} />
+          <Route index element={<Home />} />
+          <Route path="Examples" element={<Examples />} />
           <Route path="CountryDB" element={<CountrysDB />} />
         </Route>
       </Routes>
