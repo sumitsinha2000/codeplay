@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/CountryDB", "destination": "/" },
+    { "source": "/CountryDB/*", "destination": "/" },
+    { "source": "/examples", "destination": "/" },
+    { "source": "/examples/*", "destination": "/" }
+  ]
+}
