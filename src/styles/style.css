@@ -1,0 +1,10 @@
+.progress-bg {
+  background-color: olivedrab;
+}
+.social-icons ul li > a {
+  height: 100%;
+  display: inline-block;
+}
+.social-icons ul li > a > svg {
+  object-fit: fill;
+}
