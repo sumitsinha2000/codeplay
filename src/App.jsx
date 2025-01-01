@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/site_components/Layout";
 import Examples from "./pages/Examples";
-import CountrysDB from "./pages/CountryDB";
+import CountryDB from "./pages/CountryDB";
 import "./styles/style.css";
 function App() {
   // loader statefunction App({ value = 0 }) {
@@ -36,7 +36,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/Examples" element={<Examples />} />
-          <Route path="/CountryDB" element={<CountrysDB />} />
+          <Route path="/CountryDB" element={<CountryDB />} />
         </Route>
       </Routes>
     </Router>
