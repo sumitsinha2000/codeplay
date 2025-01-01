@@ -28,11 +28,7 @@ function App({ value = 0 }) {
   useEffect(() => {}, []);
   //return <Siteloader progress={percent} />;
   return isLoading ? <Siteloader progress={percent} /> : <Home />;*/
-  useEffect(() => {
-    // Initialize any non-React Flowbite JS if needed
-    // Example: initialize dropdown or modal with Flowbite JS
-    window.Flowbite.init();
-  }, []);
+
   return (
     <Router>
       <Routes>
