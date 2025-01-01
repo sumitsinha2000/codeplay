@@ -35,7 +35,6 @@ function App() {
         {/* Wrap pages with the Layout component */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/Examples" element={<Examples />} />
           <Route path="/CountryDB" element={<CountryDB />} />
         </Route>
       </Routes>
