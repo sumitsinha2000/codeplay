@@ -1,6 +1,7 @@
 //import Layout from "../components/site_components/Layout";
 //import PropTypes from "prop-types";
-
+import reactLogo from "@/assets/react.svg";
+//import graphQllogo from "https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg";
 function Examples() {
   return (
     <>
@@ -17,6 +18,7 @@ function Examples() {
               src="https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg"
               alt=""
             />
+            <img src={reactLogo} alt="" />
           </div>
           <p className="text-gray-700 mb-4">
             {" "}
@@ -36,7 +38,7 @@ function Examples() {
               target="_blank"
               className="text-blue-500 hover:text-blue-700 text-right self-end"
             >
-             Visit Article
+              Visit Article
             </a>
           </p>
         </div>

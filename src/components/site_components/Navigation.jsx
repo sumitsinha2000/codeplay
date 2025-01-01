@@ -1,7 +1,7 @@
 //import { useRouter } from 'next/router';
 //import PropTypes from "prop-types";
-import reactLogo from "@/assets/react.svg";
-import codeplayLogo from "@/assets/codeplay-logo4.png";
+//import reactLogo from "@/assets/react.svg";
+import codeplayLogo from "@/assets/codeplay-light.png";
 
 const Navigation = () => {
   return (
@@ -12,7 +12,11 @@ const Navigation = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={codeplayLogo} className="h-20 w-auto" alt="react Logo" />
+            <img
+              src={codeplayLogo}
+              className="h-20 w-auto"
+              alt="codeplay Logo"
+            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

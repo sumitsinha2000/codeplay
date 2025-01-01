@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 //import Siteloader from "./components/site_components/Siteloader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -6,8 +6,8 @@ import Layout from "./components/site_components/Layout";
 import Examples from "./pages/Examples";
 import CountrysDB from "./pages/CountryDB";
 import "./styles/style.css";
-function App({ value = 0 }) {
-  // loader state
+function App() {
+  // loader statefunction App({ value = 0 }) {
   /*const [isLoading, setIsLoading] = useState(true);
   const [percent, setPercent] = useState(value);
    useEffect(() => {
@@ -35,8 +35,8 @@ function App({ value = 0 }) {
         {/* Wrap pages with the Layout component */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="Examples" element={<Examples />} />
-          <Route path="CountryDB" element={<CountrysDB />} />
+          <Route path="/Examples" element={<Examples />} />
+          <Route path="/CountryDB" element={<CountrysDB />} />
         </Route>
       </Routes>
     </Router>

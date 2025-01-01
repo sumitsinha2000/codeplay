@@ -21,7 +21,7 @@ const Layout = () => {
               </div>
             </main>
             <Footer
-              author="React Play"
+              author="Codeplay"
               dateText="2025 Created by Sumit Sinha"
               linkIn="https://www.linkedin.com/in/sumit-s-99668a1b/"
             />
