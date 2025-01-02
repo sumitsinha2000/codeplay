@@ -1,4 +1,3 @@
 {
-  "_comment": "rewrites: [{ source: /[^.]+, destination: / }]",
   "routes": [{ "src": "/CountryDB", "dest": "/" }]
 }
